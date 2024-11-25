@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "PPMori";
+    src: url('fonts/PPMori/PPMori-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PPMori";
+    src: url('fonts/PPMori/PPMori-RegularItalic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PPMori";
+    src: url('fonts/PPMori/PPMori-SemiBold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PPMori";
+    src: url('fonts/PPMori/PPMori-SemiBoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'PPMori', sans-serif;
+    padding: 0;
+    margin: 0 10rem;
+    background-color: #171717;
+}
+
+header {
+    height: auto;
+}
+
+nav {
+    width: 40rem;
+    height: 4rem;
+    margin: 1rem auto;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    bottom:0;
+    transform: translateX(-50%);
+    z-index: 1000;
+    justify-content: center;
+    border-radius: 10rem;
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 1rem;
+    margin: 10px;
+    position: relative;
+}
+
+nav a:hover {
+    color: black;
+    transition-duration: 1s;
+}
+
+nav a span {
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid black;
+    border-radius: 2px;
+    transform: scale(0) translateY(5rem);
+    opacity: 0;
+    transition: 0.8s;
+    z-index: 1;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+#alexander {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+#alexander #1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#alexander #1 img {
+    margin: 0 10px;
+    width: 40px;
+    height: auto;
+}
+
+#about {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+}
+
+#about p {
+    font-size: 1.4rem;
+}
+
+.slideText{
+    text-align: center;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+#skills {
+    padding-top: 5rem;
+    flex-direction: column;
+    display: flex;
+    /*justify-content: left;*/
+    /*align-items: ;*/
+    width: 100%;
+    height: 100vh;
+    /*text-align: center;*/
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.skills-container {
+    display: flex;
+    /*justify-content: ;*/
+    text-align:left;
+    margin:  0;
+}
+
+.column {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(180deg, #2bc6ff 7.81%, #2256b7 83.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:0;
+}
+
+h2, li {
+    color: white;
+}
+
+p {
+    color:white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#test {
+    width: 4rem;
+    height:auto;
+}
+
+#alexander a:hover{
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+#subtext-name {
+    margin: -13rem;
+    font-size:1.2rem;
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #595959;
+    border-radius: 10px;
+}
